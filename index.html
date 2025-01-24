@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice-AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Voice-AI Assistant</h1>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>User Input</h2>
+            <div class="controls">
+                <button id="start-recording">Start Recording</button>
+                <button id="stop-recording" disabled>Stop Recording</button>
+            </div>
+            <textarea id="user-text" placeholder="Your voice-to-text will appear here..." readonly></textarea>
+        </section>
+
+        <section class="response-section">
+            <h2>AI Response</h2>
+            <div id="ai-response" class="response-box">AI response will appear here...</div>
+            <div class="audio-controls">
+                <button id="play-audio" disabled>Play</button>
+                <button id="pause-audio" disabled>Pause</button>
+            </div>
+            <div class="progress-bar">
+                <div id="progress-line" class="progress-line"></div>
+                <div id="progress-circle" class="progress-circle"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Voice-AI Assistant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
